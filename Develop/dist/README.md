@@ -1,9 +1,9 @@
-# README generator
+# README Generator
 
   ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Description
-  #### This node app generates a README.md file using the inquirer package
+  #### This node application uses the inquirer package to generate README.md files for projects
   ---
   ## Table of Contents
   - [Installation](#installation)
@@ -17,8 +17,8 @@
   #### Run npm i to install dependencies 
   ---
   ## Usage 
-  #### Make sure that you are in the Develop directory before running node index.js to initiate application
-  #### ---
+  #### Make sure that you are in the Develop directory before running node index.js to start application
+  ---
   ## License
   ##### This project is licensed under the terms of MIT license.
   ##### (https://opensource.org/licenses/MIT)
@@ -30,5 +30,5 @@
   #### Run npm test to run tests.
   ---
   ## Questions
-  ##### If you have any questions about this repo, contact Stevenmly at ly.steven16@gmail.com
-  ##### https://github.com/Stevenmly
+  ##### If you have any questions about this repo, contact stevenmly at ly.steven16@gmail.com
+  ##### https://github.com/stevenmly
