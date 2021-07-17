@@ -38,10 +38,10 @@ function renderLicenseLink(answers) {
 // If there is no license, return an empty string
 function renderLicenseSection(answers) {
   if (!answers.license) {
-    answers.lsection = "";
+    answers.licenseSection = "";
   }
   else {
-    answers.lsection = `---
+    answers.licenseSection = `---
   ## License
   ##### This project is licensed under the terms of ${answers.license} license.
   ##### ${answers.link}`
@@ -53,24 +53,36 @@ function renderLicenseSection(answers) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${data.badge}
 
   ## Description
-
-  ## Table of Contents 
-
+  #### ${data.description}
+  ---
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  ---
   ## Installation
-
+  #### Run ${data.installation} to install dependencies 
+  ---
   ## Usage 
-
-  ## License 
-
+  #### ${data.usage}
+  #### ${data.licenseSection}
+  ---
   ## Contributing
-
-  ## Tests 
-
-  ## Questions 
-
+  #### ${data.contribution}
+  ---
+  ## Tests
+  #### Run ${data.tests} to run tests.
+  ---
+  ## Questions
+  ##### If you have any questions about this repo, contact ${data.username} at ${data.email}
+  ##### https://github.com/${data.username}
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown, renderLicenseBadge, renderLicenseLink, renderLicenseSection};
