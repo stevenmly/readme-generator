@@ -1,9 +1,9 @@
-# Note-Taker
+# README generator
 
   ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Description
-  #### This application can be used to create, save and delete notes by using an Express.js back end.Note Taker is also capable of saving and retrieving data from a JSON file. Nano ID is also used to give each note a unique id.
+  #### This node application uses inquirer to generate README.md files for projects. Generated README files will be located within the ./dist folder.
   ---
   ## Table of Contents
   - [Installation](#installation)
@@ -17,14 +17,14 @@
   #### Run npm i to install dependencies 
   ---
   ## Usage 
-  #### This repo contained starter code for an assignment from the University of Texas coding boot camp.
+  #### Make sure to be in the Develop folder before starting the app with node index.js
   ---
   ## License
   ##### This project is licensed under the terms of MIT license.
   ##### (https://opensource.org/licenses/MIT)
   ---
   ## Contributing
-  #### Steven Ly is the main contributer to this repo
+  #### Steven Ly is the main contributor to this repository
   ---
   ## Tests
   #### Run npm test to run tests.
